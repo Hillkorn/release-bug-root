@@ -1,0 +1,3 @@
+[submodule "release-bug"]
+	path = release-bug
+	url = git@github.com:Hillkorn/release-bug.git
