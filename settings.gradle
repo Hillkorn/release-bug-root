@@ -1,1 +1,3 @@
 rootProject.name = 'release-bug-root'
+
+include 'release-bug'
