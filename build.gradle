@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath 'net.researchgate:gradle-release:2.4.2-SNAPSHOT'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'net.researchgate.release'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+
+    testCompile 'junit:junit:4.12'
+}
+
+release {
+    failOnCommitNeeded = false
+    failOnPublishNeeded = false
+    failOnUnversionedFiles = false
+}
